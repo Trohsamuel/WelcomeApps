@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['username'])) {
-    header("Location: WelcomeApps/ws/index.html");
+    header("Location: /job/WelcomeApps/ws/index.html");
     exit();
 }
 ?>
