@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    $file = fopen("/job/WelcomeApps/ws/users.txt", "r");
+    $file = fopen("localhost:8080/job/WelcomeApps/ws/users.txt", "r");
     $validUser = false;
 
     while (($line = fgets($file)) !== false) {
