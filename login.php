@@ -1,9 +1,9 @@
 <?php
 session_start();
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = $_POST['username'];
-    $password = $_POST['password'];
+if ($_SERVER["REQUEST_METHOD"] == "get") {
+    $username = $_GET['username'];
+    $password = $_GET['password'];
 
     $file = fopen("users.txt", "r");
     $validUser = false;
